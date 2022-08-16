@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.kegiatan-pic {
+  width: 200px;
+  max-height: 100px;
+}
+
+figure {
+  text-align: center;
+  margin: 10px;
+}
+
+.kegiatan-layout {
+  display: flex;
+  max-width: 1084px;
+  flex-direction: row;
+}
+
+.pengumuman-item {
+  overflow: auto;
+}
+
+.pengumuman-pic {
+  width: 300px;
+  height: 150px;
+  float: left;
+  margin: 10px;
+}
+
+figcaption h4 {
+  margin: 0px;
+}
+
+figcaption p {
+  margin: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 80px 0px 80px; /* margin left and right  */
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+header {
+  background-color: #241f1f;
+  padding: 0%;
+  margin: 0%;
+}
+
+nav li {
+  display: inline;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 800px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  background-image: url(/assets/img/Vector.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+main {
+  background-color: antiquewhite;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+h3 {
+  margin: 0px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.tentang-paragraph {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tentang-paragraph p {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .kegiatan-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tentang-paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+  }
+}
